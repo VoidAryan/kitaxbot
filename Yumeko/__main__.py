@@ -72,22 +72,25 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-YUMEKO_IMG = ""
+YUMEKO_IMG = "https://telegra.ph/file/f60750d5efd23b2c454e4.mp4"
 
-PM_START_TEXT = """
-**Hey I am Horimiya Bot** [ㅤ]()
-️➖➖➖➖➖➖➖➖➖➖➖➖➖
-**×I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
-️➖➖➖➖➖➖➖➖➖➖➖➖➖
-☉ **×Click the button below for more.**
+PM_START_TEXT = """Hello There !
+✪ I'm an anime-theme management bot ✨
+────────────────────────
+• Kita's Darling: @kitaxrobot
+• Channel: @hdcoolanime 
+────────────────────────
+✪ Hit /help to see my available commands.
+
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ Add Yumeko To Your group ➕", url="http://t.me/?startgroup=true"),
+        InlineKeyboardButton(text="⛓ Add Kita With You ⛓", url="https://t.me/kitaxrobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="yumeko_"),
+        InlineKeyboardButton(text="•Network•", url="https://t.me/void_network"),
+        InlineKeyboardButton(text="•Federation•", url="https://t.me/void_federation"),
         InlineKeyboardButton(
             text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Horimiya_Family"
         ),
@@ -101,17 +104,17 @@ buttons = [
 
 
 HELP_STRINGS = """
-**Main commands:**  [ㅤ](https://telegra.ph/file/efdee100cc31b4b3e0be2.mp4)
-❂ /start: Starts me! You've probably already used this.
-❂ /help: Sends this message; I'll tell you more about myself.
+**Kita's Commands:**  [ㅤ](https://telegra.ph/file/a7ac7630a2e0800901428.jpg)
+❂ /start: Starts me! Baka You've probably already used this.
+❂ /help: Send this message; I'll tell you more about myself.
 
 All commands can either be used with / or !.
-If you want to report any bugs or need any help with setting up Yumeko, reach us at here"""
+If you want to report any bugs or need any help with setting up Kita contact @voidxtoxic"""
 
 
 
-DONATE_STRING = """Hehe, baka!!
- [Is that so!!](https://t.me/Ryu_God) ❤️
+DONATE_STRING = """Hehe
+ [Is that so!!](https://t.me/voidxtoxic) 
 """
 
 IMPORTED = {}
@@ -222,12 +225,12 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.raboutvideo(
-            YUMEKO_IMG, caption= "Baka, I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            YUMEKO_IMG, caption!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/horimiya_family")]]
             ),
         )
         
@@ -373,13 +376,13 @@ def yumeko_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Setup Guide", callback_data="yumeko_setup"
+                            text="owner", url="https://t.me/voidxtoxic"
                         ),
                         InlineKeyboardButton(
-                            text="T & C", callback_data="yumeko_tc"
+                            text="Network", url="https://t.me/void_network"
                         ),
                     ],
-                    [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="yumeko_back")],
+                    [InlineKeyboardButton(text="Federation", url="https://t.me/void_federation")],
                 ]
             ),
         )
@@ -482,12 +485,12 @@ def yumeko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="亗 ʀʏᴜ", url="https://t.me/Ryu_God"),
-                    InlineKeyboardButton(text="Tarun • [ᴀc͜͡ɢᴄ]", url="https://t.me/TheBlackLinen"),
+                    InlineKeyboardButton(text="VOID", url="https://t.me/voidxtoxic"),
+                    InlineKeyboardButton(text="IRIS", url="https://t.me/slime_vidda"),
                  ],
                  [
-                    InlineKeyboardButton(text="Bot", url="https://t.me/"),
-                    InlineKeyboardButton(text="Support", url="https://t.me/"),
+                    InlineKeyboardButton(text="Bot", url="https://t.me/kitaxrobot"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/horimiya_family"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp"),
@@ -523,7 +526,7 @@ def yumeko_about_callback(update, context):
     elif query.data == "yumeko_del":
         query.message.edit_text(
             text=f"｢ Admin Permissions 」\n"
-                     f"\nTo avoid slowing down, Yumeko caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
+                     f"\nTo avoid slowing down, kita caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
                     f"\nIf you want to update them immediately, you can use the /admincache or /reload command, that'll force Yumeko to check who the admins are again and their permissions\n"
                     f"\nIf you are getting a message saying:\nYou must be this chat administrator to perform this action!\n"
                     f"\nThis has nothing to do with Yumeko's rights; this is all about YOUR permissions as an admin. Yumeko respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Yumeko. Similarly, to change Yumeko settings, you need to have the Change group info permission.\n"
