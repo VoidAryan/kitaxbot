@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.raboutvideo(
-            YUMEKO_IMG, caption!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            YUMEKO_IMG, caption= "kita wont die so easy!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
