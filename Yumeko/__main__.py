@@ -72,12 +72,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-YUMEKO_IMG = "https://telegra.ph/file/f60750d5efd23b2c454e4.mp4"
+YUMEKO_IMG = "https://telegra.ph/file/78b300985668e3ce37ec9.jpg"
 
 PM_START_TEXT = """Hello There !
 ✪ I'm an anime-theme management bot ✨
 ────────────────────────
-• Kita's Darling: @kitaxrobot
+• Kita's Darling: @Achillues
 • Channel: @hdcoolanime 
 ────────────────────────
 ✪ Hit /help to see my available commands.
