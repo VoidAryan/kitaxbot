@@ -74,8 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 YUMEKO_IMG = "https://telegra.ph/file/78b300985668e3ce37ec9.jpg"
 
-PM_START_TEXT = """[](https://telegra.ph/file/78b300985668e3ce37ec9.jpg)
-Hello There !
+PM_START_TEXT = """Hello There ![](https://telegra.ph/file/78b300985668e3ce37ec9.jpg)
 ✪ I'm an anime-theme management bot ✨
 ────────────────────────
 • Kita's Darling: @Achillues
