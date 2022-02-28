@@ -74,13 +74,13 @@ def get_readable_time(seconds: int) -> str:
 
 YUMEKO_IMG = "https://telegra.ph/file/78b300985668e3ce37ec9.jpg"
 
-PM_START_TEXT = """Hello There !
+PM_START_TEXT = """**Hello There!**  [ ](https://telegra.ph/file/78b300985668e3ce37ec9.jpg)
 ✪ I'm an anime-theme management bot ✨
 ────────────────────────
 • Kita's Darling: @Achillues
 • Channel: @hdcoolanime 
 ────────────────────────
-✪ Hit /help to see my available commands. [](https://telegra.ph/file/78b300985668e3ce37ec9.jpg)
+✪ Hit /help to see my available commands.
 
 """
 
