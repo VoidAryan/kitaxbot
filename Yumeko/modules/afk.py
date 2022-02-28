@@ -58,7 +58,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} is baka! [ ](https://telegra.ph/file/78b300985668e3ce37ec9.jpg) "
+                "**{} is baka!** [ ](https://telegra.ph/file/78b300985668e3ce37ec9.jpg) "
                 
             ]
             chosen_option = random.choice(options)
