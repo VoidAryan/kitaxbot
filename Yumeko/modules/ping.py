@@ -80,7 +80,6 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        Ping_Pic = [ ]("https://telegra.ph/file/3fd09d075537e2f8c50ac.png")
         "PONG!!\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
