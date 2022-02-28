@@ -9,7 +9,7 @@ from Yumeko import telethn as tbot
 
 PHOTO = "https://telegra.ph/file/70167c6712b97ebcb55ec.jpg"
 
-@MEMEK(pattern=("/alive"),("/kita"))
+@MEMEK(pattern=("/alive"))
 async def awake(event):
   tai = event.sender.first_name
   YUMEKO = "**Hi its kita on this side** \n\n"
