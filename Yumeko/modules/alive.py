@@ -9,12 +9,12 @@ from Yumeko import telethn as tbot
 
 PHOTO = "https://telegra.ph/file/70167c6712b97ebcb55ec.jpg"
 
-@MEMEK(pattern=("/alive"))
+@MEMEK(pattern=("/alive"),("/kita"))
 async def awake(event):
   tai = event.sender.first_name
   YUMEKO = "**Hi its kita on this side** \n\n"
   YUMEKO += "×**I'm playing great!** \n\n"
-  YUMEKO += "×**My Owners : [VOID]](https://t.me/voidxtoxic), [IRIS](https://t.me/slime_vidda)** \n\n"
+  YUMEKO += "×**My Owners : [VOID](https://t.me/voidxtoxic) , [IRIS](https://t.me/slime_vidda)** \n\n"
   YUMEKO += f"×**Telethon Version : {tlhver}** \n\n"
   YUMEKO += f"×**Pyrogram Version : {pyrover}** \n\n"
   YUMEKO += "**yeh yeh thanks for adding baka!**"
