@@ -2,7 +2,7 @@
   <img src="https://telegra.ph/file/2a95d03668764d4e00309.jpg">
 </p>
 
-<h4><p align="center"> Void Vc </p></h4>
+<h4><p align="center"> Void's Kita </p></h4>
 
 <p align="center"> kita shinsuke is an fork of yumeko bot. its an anime thmed bot for your anime group chats. </p>
 
